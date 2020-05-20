@@ -1,0 +1,25 @@
+{
+    "name": "mammoth-map-syntax",
+    "displayName": "Mammoth Style Map Syntax",
+    "description": "Syntax for the mammoth DOCX to HTML converter's style map files",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.45.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "mammoth",
+            "aliases": ["Mammoth Style Map", "mammoth"],
+            "extensions": ["mammoth"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "mammoth",
+            "scopeName": "source.mammoth",
+            "path": "./syntaxes/mammoth.tmLanguage.json"
+        }]
+    }
+}
